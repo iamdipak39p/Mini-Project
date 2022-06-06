@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Css/registration.css">
+   
+   
+</head>
+<body id="body">
+    <div>
+        <a href="home.html"><img src="home.png" alt="not Found" style="background-color: darkgoldenrod;"></a>
+    </div>
+
+    
+
+    <form class="registration" action="successReg.html"  onsubmit="return validateForm()" novalidate >
+        <h1 id="reg">Registration</h1>
+
+        <label for="fname"> First Name</label><br>
+        <input type="text" id="fname" onblur="validate1()"   required>
+        <span id="error1"></span>
+        <br><br>
+        
+        <label for="lname"> Last Name</label><br>
+        <input type="text" id="lname"  onblur="validate3()" required>
+        <span id="error2"></span><br><br>
+
+        <div>
+            <label for="">gender</label><br>
+            <input type="radio" name="Gender" id="g1" value="Male" checked><label for="">Male</label>
+            <input type="radio" name="Gender" id="g2" value="Female"><label for="">Female</label>
+        </div><br><br>
+       
+        
+        <label for=>Enter Birthdate</label><br>
+        <input type="date" required><br><br>
+        
+        <label for="telephone">Mobile No</label> <br>
+        <input type="tel" id="mobile" pattern="[0-9]{10}" onblur="validate6()" required> 
+        <span id="error6"></span><br><br>
+
+
+        <label for="login" >Enter Your Email</label><br>
+        <input type="email"  placeholder="Enter Email" id="emailid" onblur="validate4()" required>
+        <span id="error4"></span><br><br>
+        
+        <label for="User">Create Username </label> <br>
+        <input type="text" id="uname" minlength="5" maxlength="10" onblur="validate7()" required> 
+        <span id="error7"></span><br><br>
+       
+        <label for="pass"> Create Password</label> <br>
+        <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onblur="validate8()" required> 
+        <span id="error8"></span><br><br>
+
+        <label for="cpass"> Confirm Password</label> <br>
+        <input type="password" name="" id="c_pass" onblur="validate9()">
+        <span id="error9"></span><br><br>
+
+
+       
+        <button type="submit" style=" margin-left: 100px;" class="rgButton">Register</button>
+       
+        <button type="reset" style=" margin-left: 100px;" class="rgButton">Reset</button>
+    </form>
+    <br><br>
+    <a href="login.html">Already Registered</a>
+
+    <script src="scripts/validationReg.js"></script>
+
+</body>
+</html>

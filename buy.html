@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="Css/buy.css">
+    
+        
+
+</head>
+<body id="body">
+    <div id="img">
+        <a href="home.html"><img src="home.png" alt="not Found" style="background-color: darkgoldenrod;height: 50px;width: 50px;" id="img"></a>
+    </div>
+    <div id="Order">
+        <h2 style="margin-left: 5em;">Order Details</h2>
+        <form action="successReg.html" onsubmit="return validateForm()" novalidate>
+            <label for="fname"> First Name</label><br>
+            <input type="text" id="fname" onblur="validate1()"  required>
+            <span id="error1" style="color: red;"></span>
+            <br><br>
+            
+            <label for="lname"> Last Name</label><br>
+            <input type="text" id="lname" onblur="validate3()" required>
+            <span id="error3" style="color: red;"></span>
+            <br><br>
+    
+            <label for="telephone">Mobile No</label> <br>
+            <input type="tel" id="mobile" onblur="validate6()" pattern="[0-9]{10}" required> 
+            <span id="error6" style="color: red;"></span><br><br>
+    
+            <label for="address">Enter Address</label><br>
+            <textarea name="address" id="adr" cols="20" rows="5" onblur="validate7()"  required></textarea>
+            <span id="error7" style="color: red;"></span><br><br>
+    
+            <label for="">Pincode</label>
+            <input type="number" id="pin" pattern="[0-9]{6}" placeholder="416404" required onblur="validate8()">
+            <span id="error8" style="color: red;"></span><br><br>
+          
+            <label for="">Payment Mathods</label><br>
+            <input type="radio" name="Payment Mathods">UPI 
+            <input type="radio" name="Payment Mathods">Debit Card
+            <input type="radio" name="Payment Mathods">Pay On Delivary
+            <br><br>
+
+
+
+    
+            <input type="submit" value="Place Order" style="border:1px solid black ;height: 30px;background-color: darkkhaki;margin-left: 5em;">
+        </form>
+    </div>
+
+    <script src="scripts/buy.js"></script>
+</body>
+</html>
