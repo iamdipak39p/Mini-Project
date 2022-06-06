@@ -1,0 +1,44 @@
+.registration{
+    border: 2px double black;
+    padding: 20px;
+    width: 40%;
+    margin-left: 300px;
+
+    
+}
+#reg{
+   
+    padding: 1px;
+    width: 35%;
+    
+    margin-left: 100px;
+    text-align: center;
+}
+
+.rgButton{
+    width: 100px;
+    height: 50px;
+    color: brown;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: darkgoldenrod;
+    image-resolution: 1080px;
+}
+
+body{
+    background-color: darkgoldenrod;
+}
+#body{
+    background-image: url(../login1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+form>span{
+    color: red;
+    font-weight: bold;
+}

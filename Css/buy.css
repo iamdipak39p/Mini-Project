@@ -1,0 +1,18 @@
+#Order{
+    height: auto;
+    width: 400px;
+    border: 2px double violet;
+    margin: auto;
+    padding: 10px;
+}
+
+
+#body{
+    background-image: url("../login1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    
+}
+  
