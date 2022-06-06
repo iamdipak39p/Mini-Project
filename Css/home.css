@@ -42,6 +42,23 @@ div img{
    width: 50px;
 
 }
+
+div img:hover{
+  
+   transform: scale(1.2,1.2);
+   transition-duration: 2s;
+}
+
+.logo:hover{
+   transform: scale(1.5,1.5);
+   transition-duration: 3s;
+
+}
+
+.name:hover{
+   transform: rotate(20deg);
+   transition-duration: 2s;
+}
    
 .logo{
    width: 75px;
@@ -51,11 +68,3 @@ div img{
    
 }
 
-#body{
-
-
-   background-color: rgb(100, 146, 127);
-  
-
-   
-}
