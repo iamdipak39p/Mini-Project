@@ -56,11 +56,7 @@ function validate2(){
         passNode.style.border=errorBorder;
         return false;
     }
-    else if(regExp.test(password)==false){
-        errorNode2.innerHTML="Password should contain atleast one digit, small letter and capital letter.Password should be min 6 and max 15 characters long";
-        passNode.style.border=errorBorder;
-        return false;
-    }
+   
     else{
         passNode.style.border=successBorder;
         return true;
